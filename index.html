@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Konversi Suhu</title>
+</head>
+
+<body>
+    <!-- profil start -->
+    <section class="layout">
+        <section class="image-container">
+            <section class="image">
+                <img src="assets/img/melqi.png" alt="melqi">
+            </section>
+            <section class="info">
+                <h2>Melqi Maulana</h2>
+                <section class="social_icons">
+                    <a href="https://www.instagram.com/melkiar_" target="_blank" class="icon"><i
+                            class="uil uil-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/melqi-maulana-rahmat-4b07b22b2" target="_blank" class="icon"><i
+                            class="uil uil-linkedin-alt"></i></a>
+                    <a href="https://github.com/melqimaulana" target="_blank" class="icon"><i
+                            class="uil uil-github-alt"></i></a>
+                </section>
+            </section>
+        </section>
+        <!-- profil end -->
+
+        <!-- container start -->
+        <section class="container" id="container">
+            <!-- input start -->
+            <section class="konversi farenhit">
+                <section class="konversi-suhu">
+                    <h1>Konversi Suhu </h1>
+                    <span>Fahrenheit to Celsius</span>
+                    <input type="text" id="inputSuhuF" placeholder="Masukkan Suhu Fahrenheit">
+                    <textarea name="hasil" id="hasilF" readonly></textarea>
+                    <textarea name="rumus" id="rumusF" readonly></textarea>
+                    <section class="button">
+                        <button onclick="konversiF()">Konversi</button>
+                        <button onclick="resetF()" class="reset">Reset</button>
+                    </section>
+                </section>
+            </section>
+            <section class="konversi celcius">
+                <section class="konversi-suhu">
+                    <h1>Konversi Suhu </h1>
+                    <span>Celsius to Fahrenheit</span>
+                    <input type="text" id="inputSuhuC" placeholder="Masukkan Suhu Celsius">
+                    <textarea name="hasil" id="hasilC" readonly></textarea>
+                    <textarea name="rumus" id="rumusC" readonly></textarea>
+                    <section class="button">
+                        <button onclick="konversiC()">Konversi</button>
+                        <button onclick="resetC()" class="reset">Reset</button>
+                    </section>
+                </section>
+            </section>
+            <!-- input end -->
+
+            <!-- toggle start -->
+            <section class="toggle-container">
+                <section class="toggle">
+                    <section class="toggle-panel toggle-left">
+                        <h1>Cara Konversi Farenhit Ke Celcius</h1>
+                        <p>Suhu <span class="rumus">S</span> dalam derajat celcius (°C) sama dengan <span
+                                id="kon">S</span> dalam
+                            derajat farenhit (°F) dikurangi 32 dikali 9/5</p>
+                        <p><span class="rumus">S</span><sub>(°C)</sub>= (<span class="rumus">S</span><sub>(°F)</sub> -
+                            32) x 9/5</p>
+                        <p>Atau</p>
+                        <p><span class="rumus">S</span><sub>(°C)</sub>= (<span class="rumus">S</span><sub>(°F)</sub>
+                            -32) / 1.8</p>
+                        <button class="hidden" id="reverse2">Reverse</button>
+                    </section>
+                    <section class="toggle-panel toggle-right">
+                        <h1>Cara Konversi Celcius Ke Farenhit</h1>
+                        <p>Suhu <span class="rumus">S</span> dalam derajat farenhit (°F) sama dengan <span
+                                id="kon">S</span>
+                            dalam derajat celcius (°C) kali 9/5 tambah 32</p>
+                        <p><span class="rumus">S</span><sub>(°F)</sub>= (<span class="rumus">S</span><sub>(°C)</sub> x
+                            9/5)+32</p>
+                        <p>Atau</p>
+                        <p><span class="rumus">S</span><sub>(°F)</sub>= (<span class="rumus">S</span><sub>(°C)</sub> x
+                            1.8)+32</p>
+                        <button class="hidden" id="reverse1">Reverse</button>
+                    </section>
+                </section>
+            </section>
+            <!-- toggle end -->
+        </section>
+        <!-- container end -->
+
+        <!-- profil2 start -->
+        <section class="layout">
+            <section class="image-container">
+                <section class="image">
+                    <img src="assets/img/revou.png" alt="RevoU">
+                </section>
+                <section class="info">
+                    <h2>RevoU</h2>
+                    <section class="social_icons">
+                        <a href="https://www.instagram.com/revou_id?igsh=MWJwb25waGR0dXl1eA==" target="_blank"
+                            class="icon"><i class="uil uil-instagram blue"></i></a>
+
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- profil2 end -->
+
+
+
+
+
+        <script src="JS/main.js"></script>
+</body>
+
+</html>
