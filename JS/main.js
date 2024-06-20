@@ -18,6 +18,8 @@ farenhit.addEventListener('click', () => {
 });
 // function reverse start
 
+
+//function validasi input start
 document.addEventListener('DOMContentLoaded', () => {
     const inputSuhuF = document.getElementById('inputSuhuF');
     const inputSuhuC = document.getElementById('inputSuhuC');
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         input.value = input.value.replace(/[^0-9]/g, '');
     }
 });
-
+//function validasi input end
 
 // function konversi farenhit start
 function konversiF() {
